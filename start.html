@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ESERCIZIO FORM</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<section>
+				<div>
+						<label for="email">Email: </label>
+						<input type="email">
+				</div>
+				<div>	
+						<label for="pwd">Password: </label>
+						<input type="password">
+				</div>	
+				<div>
+						<label for="fnamelname">Nome e Cognome: </label>
+						<input type="text">
+				</div>
+				<div>
+						<label for="datanascita">Data di nascita: </label>
+						<input type="date">
+				</div>
+			<fieldset>
+				<legend>Seleziona Piano di Abbonamento</legend>
+					<label for="freeplan">
+						<input type="radio" id="freeplan" name="plan">Free
+					</label>
+					<label for="premium">
+						<input type="radio" id="premium" name="plan">Premium
+							<select id="premium">					
+								<option name="Light" value="5">Light 5€</option>
+								<option name="Normal" value="10">Normal 10€</option>
+								<option name="Large" value="25">Large 25€</option>
+							</select>
+					</label>
+			</fieldset>
+				<div>
+					<label for="pro">
+					<input type="checkbox" id="pro" name="pro" value="2">Vantaggi PRO (+2€)
+					</label>
+				</div>
+		</section>
+		<section>
+			<h3>INFORMAZIONI CARTA</h3>
+			<div>
+					<label for="ncard">Numero Carta: </label>
+					<input type="text">
+			</div>
+			<div>	
+					<label for="cvc">CVC: </label>
+					<input type="password" maxlength="3">
+			</div>
+			<div>
+					<label for="scadenza">Data di scadenza: </label>
+					<input type="date">
+			</div>
+		</section>
+		<section>
+			<h3>INDIRIZZO DI FATTURAZIONE</h3>
+			<div>
+					<label for="comune">Comune: </label>
+					<input type="text">	
+			</div>
+			<div>	
+					<label for="provincia">Provincia: </label>
+					<input type="text">
+			</div>
+			<div>
+					<label for="cap">Codice postale: </label>
+					<input type="text">
+			</div>
+			<div>
+					<label for="indirizzo">Via/Viale/Piazza: </label>
+					<input type="text">
+			</div>
+			<div>
+					<label for="civico">Civico/Interno/Scala: </label>
+					<input type="text">
+			</div>
+		</section>
+		<section>
+			<div>
+				<button type="submit">Conferma ordine</button>
+			</div>
+		</section>
+	</form>
+</body>
+
+</html>
