@@ -18,37 +18,37 @@
 		<section>
 				<div>
 						<label for="email">Email: </label>
-						<input type="email">
+						<input type="email" required />
 				</div>
 				<div>	
 						<label for="pwd">Password: </label>
-						<input type="password">
+						<input type="password" required />
 				</div>	
 				<div>
 						<label for="fnamelname">Nome e Cognome: </label>
-						<input type="text">
+						<input type="text" required />
 				</div>
 				<div>
 						<label for="datanascita">Data di nascita: </label>
-						<input type="date">
+						<input type="date" required />
 				</div>
 			<fieldset>
 				<legend>Seleziona Piano di Abbonamento</legend>
 					<label for="freeplan">
-						<input type="radio" id="freeplan" name="plan">Free
+						<input type="radio" id="freeplan" name="plan" required />Free
 					</label>
 					<label for="premium">
-						<input type="radio" id="premium" name="plan">Premium
+						<input type="radio" id="premium" name="plan"/>Premium
 							<select id="premium">					
-								<option name="Light" value="5">Light 5€</option>
-								<option name="Normal" value="10">Normal 10€</option>
-								<option name="Large" value="25">Large 25€</option>
+								<option name="Light">Light 5€</option>
+								<option name="Normal">Normal 10€</option>
+								<option name="Large">Large 25€</option>
 							</select>
 					</label>
 			</fieldset>
 				<div>
 					<label for="pro">
-					<input type="checkbox" id="pro" name="pro" value="2">Vantaggi PRO (+2€)
+					<input type="checkbox" id="pro" name="pro" value="2" />Vantaggi PRO (+2€)
 					</label>
 				</div>
 		</section>
@@ -56,43 +56,43 @@
 			<h3>INFORMAZIONI CARTA</h3>
 			<div>
 					<label for="ncard">Numero Carta: </label>
-					<input type="number">
+					<input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required />
 			</div>
 			<div>	
 					<label for="cvc">CVC: </label>
-					<input type="password" maxlength="3">
+					<input type="tel" inputmode="numeric" pattern="[0-9\s]*" placeholder="xxx" maxlength="3" required />
 			</div>
 			<div>
 					<label for="scadenza">Data di scadenza: </label>
-					<input type="date">
+					<input type="date" required />
 			</div>
 		</section>
 		<section>
 			<h3>INDIRIZZO DI FATTURAZIONE</h3>
 			<div>
 					<label for="comune">Comune: </label>
-					<input type="text">	
+					<input type="text" required />	
 			</div>
 			<div>	
 					<label for="provincia">Provincia: </label>
-					<input type="text">
+					<input type="text" required />
 			</div>
 			<div>
 					<label for="cap">Codice postale: </label>
-					<input type="number">
+					<input type="text" required />
 			</div>
 			<div>
 					<label for="indirizzo">Via/Viale/Piazza: </label>
-					<input type="text">
+					<input type="text" required />
 			</div>
 			<div>
 					<label for="civico">Civico/Interno/Scala: </label>
-					<input type="text">
+					<input type="text" required />
 			</div>
 		</section>
 		<section>
 			<div>
-				<button type="submit">Conferma ordine</button>
+				<button type="submit">REGISTRA</button>
 			</div>
 		</section>
 	</form>
