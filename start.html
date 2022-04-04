@@ -34,17 +34,19 @@
 				</div>
 			<fieldset>
 				<legend>Seleziona Piano di Abbonamento</legend>
-					<label for="freeplan">
-						<input type="radio" id="freeplan" name="plan" required />Free
-					</label>
-					<label for="premium">
-						<input type="radio" id="premium" name="plan"/>Premium
-							<select id="premium">					
-								<option name="Light">Light 5€</option>
-								<option name="Normal">Normal 10€</option>
-								<option name="Large">Large 25€</option>
-							</select>
-					</label>
+					<div>
+						<label for="freeplan">Free</label>
+							<input type="radio" id="freeplan" name="plan" required />
+					</div>
+					<div>
+						<label for="premium">Premium</label>
+						<input type="radio" id="premium" name="plan"/>
+								<select id="premium">					
+									<option name="Light">Light 5€</option>
+									<option name="Normal">Normal 10€</option>
+									<option name="Large">Large 25€</option>
+								</select>
+					</div>
 			</fieldset>
 				<div>
 					<label for="pro">
@@ -56,7 +58,7 @@
 			<h3>INFORMAZIONI CARTA</h3>
 			<div>
 					<label for="ncard">Numero Carta: </label>
-					<input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required />
+					<input type="tel" inputmode="numeric" pattern="[0-9\s?]{4,5})([0-9\s?]{4,5})([0-9\s?]{4,5})([0-9\s?]{4,5}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required />
 			</div>
 			<div>	
 					<label for="cvc">CVC: </label>
